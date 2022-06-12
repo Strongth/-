@@ -1,0 +1,25 @@
+<view class="body">
+
+  <view class="head">
+
+    <van-circle class="img_humi" value="{{deviceData.humi.Value}}" text="湿度 {{deviceData.humi.Value}}%" />
+  </view>
+  <view class="table">
+    <view class="tr">
+      <view class="th">模式:</view>
+      <view class="td" wx:if="{{deviceData.mode.Value == 0}}"> 自动</view>
+      <view class="td" wx:if="{{deviceData.mode.Value == 1}}"> 手动</view>
+    </view>
+
+    <view class="tr">
+      <view class="th">缺水状态:</view>
+      <view class="td" wx:if="{{deviceData.water_lack.Value == 0}}"> 否</view>
+      <view class="td" wx:if="{{deviceData.water_lack.Value == 1}}"> 是</view>
+
+    </view>
+  </view>
+  <view class="line_horizon"></view>
+</view>
+
+<wxs src="../../iotclient_for_miniprogram/filter.wxs" module="filters"></wxs>
+<button bindtap="queryDeviceDataByTime" size="middle" class="btn1" > 查询历史</button>

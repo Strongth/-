@@ -1,0 +1,11 @@
+/* pages/history/history.wxss */
+ec-canvas {
+  width: 100%;
+  height: 50%;
+  background: #eee;
+}
+.container {
+  width:100%;
+  height: 600rpx;
+  background-color: wheat;
+}

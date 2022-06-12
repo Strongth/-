@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "van-button": "../../vant/button/index",
+    "van-circle": "../../vant/circle/index",
+    "van-grid": "../../vant/grid/index",
+    "van-grid-item": "../../vant/grid-item/index",
+    "ec-canvas": "../ec-canvas/ec-canvas"
+  }
+}
